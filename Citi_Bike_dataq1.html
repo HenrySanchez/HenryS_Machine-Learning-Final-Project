@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>Citi Bike Data 2019 - Q1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.95, maximum-scale=0.95, user-scalable=0" />
+    <script type="text/javascript">
+    if (window.parent && window.parent.postMessage) {
+        window.parent.postMessage('datawrapper:vis:reload', '*');
+    }
+    </script>
+            <!--[if lt IE 9]>
+    <script src="/static/vendor/json-js/json2.min.js"></script>
+    <script type="text/javascript">
+        window.__ltie9 = true;
+    </script>
+    <![endif]-->
+    
+        <link rel="alternate" type="application/json+oembed" href="https://app.datawrapper.de/api/plugin/oembed?url=%2F%2Fdatawrapper.dwcdn.net%2FcZMp8%2F5%2F&amp;format=json" title="Citi Bike Data 2019 - Q1" />
+
+
+    <link rel="stylesheet" type="text/css" href="C:\Users\Henry\Downloads\data-cZMp8.csv"></link>
+
+    <script type="text/javascript" charset="utf-8">
+    window.__locale = 'en-US';
+    </script>
+
+      <script type="text/javascript" charset="utf-8" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js?v=b15a1905"></script>
+        <script type="text/javascript" charset="utf-8" src="//datawrapper.dwcdn.net/assets/globalize.min.js?v=b15a1905"></script>
+        <script type="text/javascript" charset="utf-8" src="//datawrapper.dwcdn.net/assets/cultures/globalize.culture.en-US.js?v=b15a1905"></script>
+        <script type="text/javascript" charset="utf-8" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js?v=b15a1905"></script>
+        <script type="text/javascript" charset="utf-8" src="//datawrapper.dwcdn.net/assets/vendor/d3-light/3.1.8/d3-light.min.js?v=b15a1905"></script>
+        <script type="text/javascript" charset="utf-8" src="//datawrapper.dwcdn.net/assets/vendor/chroma-js/0.5.4/chroma.min.js?v=b15a1905"></script>
+        <script type="text/javascript" charset="utf-8" src="//datawrapper.dwcdn.net/assets/vendor/raphael-js/2.1.2/raphael-min.js?v=b15a1905"></script>
+        <script type="text/javascript" charset="utf-8" src="/lib/vis/column-chart-4dcac1b2292e969895843231a559613d.min.js?v=b15a1905"></script>
+        <script type="text/javascript" charset="utf-8" src="/lib/chart-0044f242c10aa448672d5670aca94e5370f8eb97.min.js?v=b15a1905"></script>
+  
+    <script type="text/javascript">
+        (function() {
+            dw.theme.register('default-data', {"typography":{"chart":{"typeface":"Helvetica","color":"#333333","fontSize":12},"headline":{"fontSize":22,"fontWeight":"lighter","underlined":0,"cursive":0},"description":{"fontSize":12,"lineHeight":17,"fontWeight":"normal","underlined":0,"cursive":0},"notes":{"fontSize":12,"fontWeight":"normal","underlined":0,"cursive":1},"footer":{"color":"#888","fontSize":11,"fontWeight":"normal","underlined":0,"cursive":0},"links":{"color":"#0088CC","fontWeight":"normal","underlined":0,"cursive":0}},"colors":{"general":{"background":"transparent","padding":0},"palette":["#1f77b4","#ff7f0e","#2ca02c","#d62728","#9467bd"]},"options":{"footer":{"logo":{"enabled":0,"height":30,"position":"right"},"getTheData":{"enabled":1,"caption":"Get the data"},"embed":{"enabled":0,"caption":"Embed"},"staticImage":{"enabled":0,"caption":"Download Image"},"createdWithDatawrapper":1,"sourcePosition":"left","sourceCaption":"Source","chartCaption":"Chart:","createdWithCaption":"Created with","mapCaption":"Map:","tableCaption":"Table:","forkCaption":"Based on"}}});
+        }).call(this);
+    </script>
+
+
+    <style type="text/css">
+        .chart {
+  font-family: Helvetica;
+  color: #333333;
+  font-size: 12px;
+  background: transparent;
+  margin: 0 0px;
+  height: 100%;
+}
+.chart.vis-height-fit {
+  overflow: hidden;
+}
+.chart a {
+  color: #0088CC;
+  text-decoration: none;
+}
+.chart .dw-chart-header {
+  min-height: 1px;
+  position: relative;
+  overflow: auto;
+}
+.chart .dw-chart-header .header-right {
+  position: absolute;
+  right: 10px;
+  z-index: 20;
+}
+.chart .dw-chart-header h1 {
+  font-weight: lighter;
+  font-size: 22px;
+  font-style: normal;
+  text-decoration: none;
+  margin: 0 0 10px;
+}
+.chart .dw-chart-header p {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  font-style: normal;
+  text-decoration: none;
+  margin: 5px 0 10px !important;
+}
+.chart .dw-chart-body {
+  margin: 0px 0px 20px 0px;
+}
+.chart .dw-chart-body.dark-bg .label span {
+  color: #333333;
+  fill: #333333;
+}
+.chart .dw-chart-body .bc-grid-line {
+  border-left-style: solid;
+}
+.chart .labels text {
+  font-size: 12px;
+}
+.chart .label {
+  font-size: 12px;
+}
+.chart .label span,
+.chart .label tspan {
+  color: #333333;
+  fill: #333333;
+}
+.chart .label.inverted span {
+  text-shadow: 0 0px 2px #000000;
+  color: #ffffff;
+}
+.chart .label.inside:not(.inverted) span {
+  text-shadow: 0 0px 2px #ffffff;
+  color: #333333;
+}
+.chart .label sup {
+  text-shadow: none;
+}
+.chart .label.highlighted {
+  font-weight: bold;
+}
+.chart .label.highlighted,
+.chart .label .label.axis {
+  font-size: 12px;
+  z-index: 100;
+}
+.chart .label.hover {
+  font-weight: bold;
+}
+.chart .label.smaller span {
+  font-size: 80%;
+}
+.chart .dw-chart-notes {
+  font-weight: normal;
+  font-size: 12px;
+  font-style: italic;
+  text-decoration: none;
+  margin: 0px 0px 5px 0px;
+  position: relative;
+}
+.chart #footer,
+.chart .dw-chart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: normal;
+  font-size: 11px;
+  font-style: normal;
+  text-decoration: none;
+  color: #888;
+}
+.chart #footer > div > .footer-block,
+.chart .dw-chart-footer > div > .footer-block {
+  display: inline-block;
+}
+.chart #footer > div > .footer-block.hidden,
+.chart .dw-chart-footer > div > .footer-block.hidden {
+  display: none;
+}
+.chart #footer > div > .footer-block a[href=""],
+.chart .dw-chart-footer > div > .footer-block a[href=""] {
+  color: #888;
+  pointer-events: none;
+  text-decoration: none;
+  padding: 0;
+  border-bottom: 0;
+}
+.chart #footer > div > .footer-block .separator,
+.chart .dw-chart-footer > div > .footer-block .separator {
+  display: inline-block;
+  font-style: initial;
+}
+.chart #footer > div > .footer-block .separator:before,
+.chart .dw-chart-footer > div > .footer-block .separator:before {
+  content: "•";
+  display: inline-block;
+}
+.chart #footer > div .footer-block.hidden:first-child + .footer-block:not(.hidden) .separator,
+.chart #footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart #footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart #footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart #footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart #footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart .dw-chart-footer > div .footer-block.hidden:first-child + .footer-block:not(.hidden) .separator,
+.chart .dw-chart-footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart .dw-chart-footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart .dw-chart-footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart .dw-chart-footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart .dw-chart-footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator {
+  display: none;
+}
+.chart #footer > div > a:first-child::before,
+.chart #footer > div > .source-block:first-child::before,
+.chart #footer > div > .footer-block:first-child::before,
+.chart .dw-chart-footer > div > a:first-child::before,
+.chart .dw-chart-footer > div > .source-block:first-child::before,
+.chart .dw-chart-footer > div > .footer-block:first-child::before {
+  content: "";
+  display: none;
+}
+.chart .dw-chart-notes a,
+.chart .dw-chart-footer a {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  color: #0088CC;
+}
+.chart a img {
+  border: 0px;
+}
+.chart .embed-code {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  padding: 15px;
+  background: #eee;
+  color: #000;
+  border-radius: 6px;
+  text-transform: none;
+  font-size: 1em;
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+.chart .embed-code textarea {
+  width: 90%;
+  margin-top: 2%;
+  height: 7em;
+}
+.chart .hide {
+  display: none;
+}
+.chart .embed-code .close {
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  font-size: 1.125em;
+  opacity: 0.7;
+}
+.chart .embed-code .close:hover {
+  opacity: 1;
+}
+.chart .dw-tooltip {
+  color: #333333;
+}
+.chart .tooltip {
+  z-index: 200;
+  padding-bottom: 0px;
+}
+.chart .tooltip .content {
+  background-color: #fff;
+  border: 1px solid #888;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  padding: 5px 8px;
+}
+.chart .tooltip label {
+  font-weight: 700;
+}
+.chart .tooltip label:after {
+  content: ": ";
+}
+.chart .logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.chart .logo .big {
+  display: none;
+}
+.chart svg .axis,
+.chart svg .tick,
+.chart svg .grid,
+.chart svg rect {
+  shape-rendering: crispEdges;
+}
+.chart .filter-links {
+  height: 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-bottom: 1px solid #ccc;
+  font-size: 12px;
+}
+.chart .filter-links a {
+  color: #666;
+  height: 28px;
+  line-height: 28px;
+  padding: 10px;
+  text-decoration: none;
+}
+.chart .filter-links a:hover {
+  color: #222;
+}
+.chart .filter-links a.active {
+  font-weight: bold;
+  color: #000;
+  box-shadow: none;
+  cursor: default;
+  text-decoration: none;
+  border-bottom: 3px solid #555;
+  padding: 10px 10px 6px 10px;
+}
+.chart .filter-select {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px 4px 4px 4px;
+  padding: 4px 6px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.chart.plain #footer {
+  height: 10px;
+}
+.chart.js .noscript {
+  display: none;
+}
+.chart .hidden {
+  display: none;
+}
+.chart .label.annotation span {
+  background: transparent;
+}
+.chart .legend-item.hover .label {
+  font-weight: bold;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.point {
+  border: 1px solid #ccc;
+  display: inline-block;
+  position: absolute;
+  background: #fff;
+  z-index: 100;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  top: 20px;
+}
+.point:hover {
+  background: #ebebeb;
+}
+.point.active {
+  background: #ccc;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  top: 20px;
+  border-color: #888;
+}
+.point-label {
+  position: absolute;
+}
+.line {
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  z-index: 1;
+}
+.vis-pie-chart path,
+.vis-donut-chart path,
+.vis-election-donut-chart path {
+  stroke-width: 0.5;
+}
+.chart,
+.dw-chart-body.column-chart {
+  overflow: hidden;
+}
+.chart .label {
+  position: absolute;
+}
+.chart .label span {
+  overflow-wrap: initial;
+}
+.chart .label.series.rotate90 {
+  transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  transform-origin: center center;
+}
+.chart .label.series.rotate90.smaller {
+  transform: rotate(-90deg) translate(0,-10%);
+  -moz-transform: rotate(-90deg) translate(0,-10%);
+  -webkit-transform: rotate(-90deg) translate(0,-10%);
+  -ms-transform: rotate(-90deg) translate(0,-10%);
+  -o-transform: rotate(-90deg) translate(0,-10%);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  transform-origin: center center;
+}
+.chart .label.lbl-align-right.rotate90 {
+  text-align: right !important;
+}
+.chart .label.lbl-align-left.rotate90 {
+  text-align: left !important;
+}
+.chart .label.hover {
+  font-weight: initial;
+}
+.chart .label.only-on-hover {
+  display: none;
+}
+.chart .label.only-on-hover.hover {
+  display: block;
+}
+
+            </style>
+
+    
+
+</head>
+<body class="dw-chart chart vis-height-fit theme-default-data vis-column-chart">
+    
+
+                            
+    <div class="dw-chart-header" id="header">
+                    <h1 >
+                <span class="chart-title">Citi Bike Data 2019 - Q1</span>
+            </h1>
+
+            <p class="chart-intro">For older data sets please see http://citibikenyc.com/system-data.</p>
+            </div>
+
+    <div class="dw-chart-body" id="chart"></div>
+
+        <div class="dw-chart-notes hidden">
+        
+    </div>
+    
+    
+    
+            <div class="dw-chart-footer" id="footer">
+            <div class="footer-left">
+                
+                                    
+                                                <span class="footer-block byline-block hidden">
+                            Chart:
+                            <span class="chart-byline"></span>
+                        </span>
+                        
+
+                                                <span class="footer-block source-block hidden">
+                                                        <span class="separator"></span>
+                            Source:
+                            <a href="" target="_blank"></a>
+                        </span>
+                        
+                        
+
+                                                                        <span class="footer-block chart-action-data">
+                                                                                    <span class="separator"></span>
+                                                        <a href="data">Get the data</a>
+                        </span>
+                        
+                                                
+                                                
+                                                                        <span class="footer-block attribution">
+                            <span class="separator"></span>
+                            <a href="//www.datawrapper.de/_/cZMp8/" target="_blank">Created with  Datawrapper</a>
+                        </span>
+                        
+                                                                        </div>
+            <div class="footer-right">
+                
+                            </div>
+        </div>
+    
+    
+    <script type="text/javascript">
+    setTimeout(function() {
+        var img = document.createElement('img');
+        img.setAttribute('width', 1);
+        img.setAttribute('height', 1);
+        img.style.float = "right";
+        img.setAttribute('src', '//stats.datawrapper.de/cZMp8/pixel.gif?r='+escape(document.referrer || ''));
+        document.body.appendChild(img);
+    },10);
+</script>
+
+
+
+    <script type="text/javascript" charset="utf-8">
+
+    (function() {
+
+        /*!  */
+var render=function(){"use strict";function e(e){return function(t){var n=t.toLowerCase().match(e);return!!n&&parseInt(n[1],10)}}var t={chrome:e(/chrom(?:e|ium)\/([0-9]+)\./),firefox:e(/firefox\/([0-9]+\.*[0-9]*)/),safari:e(/version\/([0-9]+).[0-9]+.[0-9]+ safari/),ie:e(/(?:msie |rv:)([0-9]+).[0-9]+/),edge:e(/edge\/([0-9]+).[0-9]+.[0-9]+/)};var n,i=(function(e){!function(){function t(e,t){document.addEventListener?e.addEventListener("scroll",t,!1):e.attachEvent("scroll",t)}function n(e){this.a=document.createElement("div"),this.a.setAttribute("aria-hidden","true"),this.a.appendChild(document.createTextNode(e)),this.b=document.createElement("span"),this.c=document.createElement("span"),this.h=document.createElement("span"),this.f=document.createElement("span"),this.g=-1,this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;",this.b.appendChild(this.h),this.c.appendChild(this.f),this.a.appendChild(this.b),this.a.appendChild(this.c)}function i(e,t){e.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;white-space:nowrap;font-synthesis:none;font:"+t+";"}function o(e){var t=e.a.offsetWidth,n=t+100;return e.f.style.width=n+"px",e.c.scrollLeft=n,e.b.scrollLeft=e.b.scrollWidth+100,e.g!==t&&(e.g=t,!0)}function r(e,n){function i(){var e=r;o(e)&&e.a.parentNode&&n(e.g)}var r=e;t(e.b,i),t(e.c,i),o(e)}function a(e,t){var n=t||{};this.family=e,this.style=n.style||"normal",this.weight=n.weight||"normal",this.stretch=n.stretch||"normal"}var s=null,d=null,c=null,l=null;function h(){return null===l&&(l=!!document.fonts),l}function f(e,t){return[e.style,e.weight,function(){if(null===c){var e=document.createElement("div");try{e.style.font="condensed 100px sans-serif"}catch(e){}c=""!==e.style.font}return c}()?e.stretch:"","100px",t].join(" ")}a.prototype.load=function(e,t){var o=this,a=e||"BESbswy",c=0,l=t||3e3,u=(new Date).getTime();return new Promise(function(e,t){if(h()&&!function(){if(null===d)if(h()&&/Apple/.test(window.navigator.vendor)){var e=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))(?:\.([0-9]+))/.exec(window.navigator.userAgent);d=!!e&&603>parseInt(e[1],10)}else d=!1;return d}()){var p=new Promise(function(e,t){!function n(){(new Date).getTime()-u>=l?t(Error(l+"ms timeout exceeded")):document.fonts.load(f(o,'"'+o.family+'"'),a).then(function(t){1<=t.length?e():setTimeout(n,25)},t)}()}),m=new Promise(function(e,t){c=setTimeout(function(){t(Error(l+"ms timeout exceeded"))},l)});Promise.race([m,p]).then(function(){clearTimeout(c),e(o)},t)}else!function(e){document.body?e():document.addEventListener?document.addEventListener("DOMContentLoaded",function t(){document.removeEventListener("DOMContentLoaded",t),e()}):document.attachEvent("onreadystatechange",function t(){"interactive"!=document.readyState&&"complete"!=document.readyState||(document.detachEvent("onreadystatechange",t),e())})}(function(){function d(){var t;(t=-1!=w&&-1!=v||-1!=w&&-1!=g||-1!=v&&-1!=g)&&((t=w!=v&&w!=g&&v!=g)||(null===s&&(t=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),s=!!t&&(536>parseInt(t[1],10)||536===parseInt(t[1],10)&&11>=parseInt(t[2],10))),t=s&&(w==y&&v==y&&g==y||w==x&&v==x&&g==x||w==b&&v==b&&g==b)),t=!t),t&&(E.parentNode&&E.parentNode.removeChild(E),clearTimeout(c),e(o))}var h=new n(a),p=new n(a),m=new n(a),w=-1,v=-1,g=-1,y=-1,x=-1,b=-1,E=document.createElement("div");E.dir="ltr",i(h,f(o,"sans-serif")),i(p,f(o,"serif")),i(m,f(o,"monospace")),E.appendChild(h.a),E.appendChild(p.a),E.appendChild(m.a),document.body.appendChild(E),y=h.a.offsetWidth,x=p.a.offsetWidth,b=m.a.offsetWidth,function e(){if((new Date).getTime()-u>=l)E.parentNode&&E.parentNode.removeChild(E),t(Error(l+"ms timeout exceeded"));else{var n=document.hidden;!0!==n&&void 0!==n||(w=h.a.offsetWidth,v=p.a.offsetWidth,g=m.a.offsetWidth,d()),c=setTimeout(e,50)}}(),r(h,function(e){w=e,d()}),i(h,f(o,'"'+o.family+'",sans-serif')),r(p,function(e){v=e,d()}),i(p,f(o,'"'+o.family+'",serif')),r(m,function(e){g=e,d()}),i(m,f(o,'"'+o.family+'",monospace'))})})},e.exports=a}()}(n={exports:{}},n.exports),n.exports);return function(e){var n=e.visJSON,o=e.chartJSON,r=e.chartData,a=e.isPreview,s=e.chartLocale,d=e.metricPrefix,c=e.themeId,l=e.templateJS,h=e.fontsJSON,f=e.typographyJSON,u=e.locales;window.visJSON=n;var p,m,w,v,g,y={firefox:[30,51],chrome:[20,54],ie:[6,11],edge:[12,18],safari:[6,12]},x=(p="undefined"!=typeof InstallTrigger,m=/constructor/i.test(window.HTMLElement)||"[object SafariRemoteNotification]"===(!window.safari||window.safari.pushNotification).toString(),w=!!document.documentMode,v=!w&&!!window.StyleMedia,{browser:g=window.chrome&&window.chrome.loadTimes?"chrome":p?"firefox":m?"safari":w?"ie":!!v&&"edge",version:!(!g||!t[g])&&t[g](navigator.userAgent)}),b=document.createElement("script");if(b.type="text/javascript",b.async=!0,b.onload=E,b.onerror=E,x.browser&&y[x.browser]&&x.version>=y[x.browser][0]){if(x.version>y[x.browser][1])return E();b.src="https://datawrapper.dwcdn.net/lib/polyfills/"+x.browser+"-"+x.version+".js"}else b.src="https://datawrapper.dwcdn.net/lib/polyfills/all.js";function E(){__dw.init(Object.assign({visJSON:n,chartJSON:o,data:r,preview:a,chartLocale:s,locales:u,themeId:c,visId:o.type,lang:s.substr(0,2),metricPrefix:d},window.__dwParams||{})),function(e,t){var n=Array.isArray(e)?[]:Object.keys(e),o=new Set(n);Object.keys(t).forEach(function(e){var n=t[e].typeface;n&&n.split(",").map(function(e){return e.trim()}).forEach(function(e){return o.add(e)})});var r=[];return o.forEach(function(e){var t=new i(e);r.push(t.load(null,5e3))}),Promise.all(r)}(h,f).then(function(){return __dw.render()}).catch(function(){return __dw.render()}),/iP(hone|od|ad)/.test(navigator.platform)&&(window.onload=__dw.render());var e=!1,t=n.id,p=dw.theme(c);p&&t&&("d3-pies"===t||"d3-donuts"===t||"d3-multiple-pies"===t||"d3-multiple-donuts"===t)&&(e=function(e,t,n){if(void 0===t&&(t=null),void 0===n&&(n=null),!t)return e;for(var i=t.split("."),o=e,r=0;r<i.length&&null!==o&&void 0!==o;r++)o=o[i[r]];return void 0===o||null===o?n:o}(p,"vis.d3-pies.fitchart",0));var m="1"===new URLSearchParams(window.location.search).get("fitchart")||1===e||!0===e;setInterval(function(){var e,t;if("fixed"!==n.height||m){if(__dw.params.preview||!__dw.vis.chart().get("metadata.publish.chart-height"))return;t=dw.utils.getNonChartHeight()+__dw.vis.chart().get("metadata.publish.chart-height")}else t=$("html").outerHeight(!0);window.parent.postMessage({"datawrapper-height":(e={},e[o.id]=t,e)},"*"),window.parent.postMessage({sentinel:"amp",type:"embed-size",height:t},"*"),window.parent.postMessage(JSON.stringify({src:window.location.toString(),context:"iframe.resize",height:t}),"*")},1e3),"function"==typeof l&&l()}document.getElementsByTagName("head")[0].appendChild(b)}}();
+
+        render({
+            visJSON: {"id":"column-chart","title":"Column Chart","version":"3ce344a6","dimensions":1,"extends":"raphael-chart","order":9,"less":"\/var\/www\/datawrapper\/plugins\/visualization-column-charts\/less\/column-chart.less","axes":{"labels":{"accepts":["text","date"]},"columns":{"accepts":["number"],"multiple":true}},"options":{"g-sorting":{"type":"group","label":"Sorting","options":{"sort-values":{"type":"checkbox","label":"Automatically sort bars"},"reverse-order":{"type":"checkbox","label":"Reverse order"}}},"g-x-axis":{"type":"group","label":"x-axis","options":{"rotate-labels":{"label":"Rotate axis labels:","type":"radio","options":{"auto":"auto","on":"always","off":"never"},"default":"auto"}}},"g-y-axis":{"type":"group","label":"y-axis","options":{"absolute-scale":{"type":"checkbox","label":"Use the same scale for all columns","depends-on":{"chart.min_columns[columns]":2}},"custom-range":{"type":"custom-range","label":"Custom range"},"grid-lines":{"type":"radio","label":"Grid lines:","options":[{"value":"show","label":"Show"},{"value":"hide","label":"Hide"}],"default":"show"},"custom-ticks":{"type":"text","label":"Custom ticks:","depends-on":{"grid-lines":"show"}},"grid-label-position":{"type":"radio","label":"Grid position:","options":{"left":"left","right":"right"},"default":"left","depends-on":{"grid-lines":"show"}},"grid-labels":{"type":"radio","label":"Ticks position:","options":[{"value":"outside","label":"outside"},{"value":"inside","label":"inside"},{"value":"hidden","label":"hidden"}],"default":"outside","depends-on":{"grid-lines":"show"}}}},"g-display":{"type":"group","label":"Display","options":{"base-color":{"type":"base-color","label":"Base color"},"negative-color":{"type":"checkbox","label":"Use different color for negative values","depends-on":{"chart.min_value[columns]":"<0"}},"bar-padding":{"type":"slider","label":"Space between bars","default":30,"min":0,"max":100,"html_after":"%"},"value-labels":{"type":"radio","label":"Values:","options":[{"value":"show","label":"Show"},{"value":"hide","label":"Hide"},{"value":"auto","label":"Automatic"},{"value":"hover","label":"Hover"}],"default":"auto"},"ignore-missing-values":{"type":"checkbox","label":"Ignore missing values","default":false}}}},"__static_path":"assets\/plugins\/visualization-column-charts\/","__static_path_fs":"..\/\/www\/static\/plugins\/visualization-column-charts\/","__plugin":"visualization-column-charts","icon":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\" id=\"Ebene_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 100 100\" style=\"enable-background:new 0 0 100 100;\" xml:space=\"preserve\">\n<rect y=\"37.7\" width=\"29.3\" height=\"47.3\"\/>\n<rect x=\"36\" width=\"28\" height=\"85\"\/>\n<rect x=\"72\" y=\"25.8\" width=\"28\" height=\"59.2\"\/>\n<\/svg>\n","workflow":[{"id":"upload","title":"Upload Data"},{"id":"describe","title":"Check & Describe"},{"id":"visualize","title":"Visualize"},{"id":"publish","title":"Publish & Embed"}],"svelte-workflow":"chart","locale":[]},
+            chartJSON: {"id":"cZMp8","title":"Citi Bike Data 2019 - Q1","theme":"default-data","createdAt":"2019-01-23 20:06:51","lastModifiedAt":"2019-06-11 20:45:54","type":"column-chart","metadata":{"data":{"transpose":false,"vertical-header":true,"horizontal-header":true,"changes":[],"charset-fixed":true,"column-format":{"Date":{"type":"auto","ignore":false,"number-append":"","number-format":"auto","number-prepend":""},"Miles traveled to date:":{"ignore":true},"Cumulative trips (since launch):":{"ignore":true}},"upload-method":"copy"},"visualize":{"highlighted-series":[],"highlighted-values":[],"rules":false,"thick":false,"x-grid":"off","sort-asc":true,"sortable":true,"color-key":{"base-color":{"id":"base-color","color":"#1f77b4","label":""}},"sort-bars":"keep","background":false,"grid-lines":"auto","bar-padding":30,"grid-labels":"outside","hide-header":false,"swap-labels":false,"block-labels":false,"value-labels":"auto","rotate-labels":false,"flag-icon-type":"4x3","show-color-key":true,"label-alignment":"left","table-responsive":true,"date-label-format":"YYYY","hide-value-labels":false,"replace-flag-icons":false,"value-label-format":"0,0.[00]","grid-label-position":"left","ignore-missing-values":false},"describe":{"source-name":"","source-url":"","number-format":"-","number-divisor":0,"number-append":"","number-prepend":"","intro":"For older data sets please see http:\/\/citibikenyc.com\/system-data.","byline":""},"publish":{"embed-width":"548","embed-height":500,"text":"#000000","background":"#ffffff","embed-codes":{"embed-method-iframe":"<iframe title=\"Citi Bike Data 2019 - Q1\" aria-label=\"Column Chart\" src=\"\/\/datawrapper.dwcdn.net\/cZMp8\/5\/\" scrolling=\"no\" frameborder=\"0\" style=\"border: none;\" width=\"548\" height=\"500\"><\/iframe>","embed-method-responsive":"<iframe title=\"Citi Bike Data 2019 - Q1\" aria-label=\"Column Chart\" id=\"datawrapper-chart-cZMp8\" src=\"\/\/datawrapper.dwcdn.net\/cZMp8\/5\/\" scrolling=\"no\" frameborder=\"0\" style=\"width: 0; min-width: 100% !important; border: none;\" height=\"500\"><\/iframe><script type=\"text\/javascript\">!function(){\"use strict\";window.addEventListener(\"message\",function(a){if(void 0!==a.data[\"datawrapper-height\"])for(var e in a.data[\"datawrapper-height\"]){var t=document.getElementById(\"datawrapper-chart-\"+e)||document.querySelector(\"iframe[src*='\"+e+\"']\");t&&(t.style.height=a.data[\"datawrapper-height\"][e]+\"px\")}})}();<\/script>"},"chart-height":377,"embed-heights":{"100":601,"200":542,"300":517,"400":500,"500":500,"700":500,"800":500,"900":500,"1000":500}},"annotate":{"notes":""},"colorblind":{"protanopia":0,"tritanopia":0,"deuteranopia":0},"json_error":null},"authorId":3126,"showInGallery":false,"language":"en-US","guestSession":null,"lastEditStep":5,"publishedAt":"2019-06-11 20:45:59","publicUrl":"\/\/datawrapper.dwcdn.net\/cZMp8\/5\/","publicVersion":5,"organizationId":null,"forkedFrom":"pRAtm","externalData":null,"forkable":false,"isFork":false,"inFolder":null,"utf8":false,"author":{"id":3126,"email":"eruigomez@lyft.com","name":null,"website":null,"socialmedia":null,"isLoggedIn":true,"isGuest":false,"isActivated":true,"isAdmin":false}},
+            chartData: "Date,Trips over the past 24-hours (midnight to 11:59pm),Miles traveled today (midnight to 11:59 pm),Total Annual Members (All Time),24-Hour Passes Purchased (midnight to 11:59 pm),3-Day Passes Purchased (midnight to 11:59 pm)\r\n1\/1\/19,22145,44131,297823,2429,49\r\n1\/2\/19,38249,58975,297908,1062,36\r\n1\/3\/19,42181,62500,297976,969,31\r\n1\/4\/19,44420,65739,298017,1173,33\r\n1\/5\/19,17636,24326,298048,462,8\r\n1\/6\/19,31764,50481,298094,1711,31\r\n1\/7\/19,36928,52310,298152,514,18\r\n1\/8\/19,41728,60469,298218,654,23\r\n1\/9\/19,44882,63480,298263,646,23\r\n1\/10\/19,39449,53225,298299,478,13\r\n1\/11\/19,33196,44226,298331,465,23\r\n1\/12\/19,25431,35133,298361,772,26\r\n1\/13\/19,23020,33018,298399,700,18\r\n1\/14\/19,35408,48021,298439,402,9\r\n1\/15\/19,39538,54751,298470,511,19\r\n1\/16\/19,40854,56553,298510,513,7\r\n1\/17\/19,39417,53430,298546,463,14\r\n1\/18\/19,34478,47215,298574,542,27\r\n1\/19\/19,23933,34580,298595,865,28\r\n1\/20\/19,14440,19131,298616,368,8\r\n1\/21\/19,10392,11911,298632,141,5\r\n1\/22\/19,28913,37788,298665,315,14\r\n1\/23\/19,42028,59442,298692,526,10\r\n1\/24\/19,20328,27931,298721,260,7\r\n1\/25\/19,39298,54567,298748,621,21\r\n1\/26\/19,26607,38634,298778,933,18\r\n1\/27\/19,30338,48280,298828,1510,19\r\n1\/28\/19,36173,49109,298878,448,13\r\n1\/29\/19,31355,42066,298919,341,12\r\n1\/30\/19,25496,33178,298947,263,8\r\n1\/31\/19,18882,22917,298975,186,8\r\n2\/1\/19,25289,31752,298998,255,11\r\n2\/2\/19,22280,30802,299032,627,19\r\n2\/3\/19,32274,52757,299103,1743,24\r\n2\/4\/19,47049,73262,299172,1180,42\r\n2\/5\/19,54710,87917,299249,1770,42\r\n2\/6\/19,39616,55696,299296,754,27\r\n2\/7\/19,43840,62728,299341,765,22\r\n2\/8\/19,36964,52442,299383,864,22\r\n2\/9\/19,24041,33607,299409,811,10\r\n2\/10\/19,24434,35873,299449,935,6\r\n2\/11\/19,39197,54362,299493,563,20\r\n2\/12\/19,16044,22190,299521,150,4\r\n2\/13\/19,35523,48870,299551,439,21\r\n2\/14\/19,42313,61381,299589,773,26\r\n2\/15\/19,47524,74286,299633,1590,58\r\n2\/16\/19,31347,52760,299683,2030,58\r\n2\/17\/19,24287,39660,299711,1439,30\r\n2\/18\/19,26176,37500,299757,810,17\r\n2\/19\/19,35226,49024,299810,595,10\r\n2\/20\/19,20694,28763,299835,221,15\r\n2\/21\/19,40082,60375,299871,961,37\r\n2\/22\/19,42338,61956,299913,1097,49\r\n2\/23\/19,31956,49887,299956,1635,28\r\n2\/24\/19,24503,37473,299993,992,19\r\n2\/25\/19,34736,47207,300029,495,14\r\n2\/26\/19,38126,52805,300067,524,23\r\n2\/27\/19,37028,48666,300097,464,27\r\n2\/28\/19,38784,53031,300157,652,30\r\n3\/1\/19,30242,41583,300183,522,26\r\n3\/2\/19,18001,27381,300213,570,25\r\n3\/3\/19,23240,35764,300264,1115,22\r\n3\/4\/19,28424,39154,300319,563,23\r\n3\/5\/19,37103,50155,300367,552,24\r\n3\/6\/19,33287,42845,300409,376,27\r\n3\/7\/19,35913,46582,300450,468,15\r\n3\/8\/19,40416,55748,300503,852,32\r\n3\/9\/19,38929,68739,300574,3010,35\r\n3\/10\/19,18897,28056,300611,662,16\r\n3\/11\/19,52412,80705,300691,1749,56\r\n3\/12\/19,47214,66518,300757,1003,40\r\n3\/13\/19,50121,71556,300825,1194,42\r\n3\/14\/19,57476,86864,300904,1826,82\r\n3\/15\/19,57517,95073,300987,2843,119\r\n3\/16\/19,42144,74307,301086,3369,97\r\n3\/17\/19,36826,64440,301187,2755,73\r\n3\/18\/19,46535,68775,301278,1361,54\r\n3\/19\/19,52997,78320,301381,1602,49\r\n3\/20\/19,55396,83442,301476,1723,58\r\n3\/21\/19,21248,27005,301520,342,14\r\n3\/22\/19,35477,49691,301579,1076,51\r\n3\/23\/19,37379,61407,301671,2693,74\r\n3\/24\/19,50318,100843,301827,5896,79\r\n3\/25\/19,53463,79824,301952,1562,64\r\n3\/26\/19,55421,81425,302083,1715,49\r\n3\/27\/19,54483,78975,302176,1583,56\r\n3\/28\/19,58538,87465,302430,1966,87\r\n3\/29\/19,59324,91975,302587,2573,103\r\n3\/30\/19,66672,144759,302941,9151,135\r\n3\/31\/19,32768,52486,303060,1916,52",
+            isPreview: false,
+            chartLocale: 'en-US',
+            locales: {},
+            metricPrefix: {"3":"k","6":"m","9":"b","12":"t"},
+            themeId: "default-data",
+            fontsJSON: [],
+            typographyJSON: {"chart":{"typeface":"Helvetica","color":"#333333","fontSize":12},"headline":{"fontSize":22,"fontWeight":"lighter","underlined":0,"cursive":0},"description":{"fontSize":12,"lineHeight":17,"fontWeight":"normal","underlined":0,"cursive":0},"notes":{"fontSize":12,"fontWeight":"normal","underlined":0,"cursive":1},"footer":{"color":"#888","fontSize":11,"fontWeight":"normal","underlined":0,"cursive":0},"links":{"color":"#0088CC","fontWeight":"normal","underlined":0,"cursive":0}},
+            templateJS: false
+        });
+
+    })();
+
+    </script>
+
+</body>
+</html>
